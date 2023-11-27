@@ -1,0 +1,69 @@
+body{
+    color: white;
+    background-color: indigo;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    padding: 16px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.container-de-imagens {
+    display: flex;
+    justify-content: center;
+    align-items: right;
+}
+
+.container-de-imagens img {
+    width: 200px;
+    height: auto;
+}
+
+nav a:hover{
+    color: pink;
+ }
+
+ h1{
+    color: deeppink;
+    text-align: center;
+ }
+
+ header img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid DeepPink;
+ }
+
+ footer img{
+    width: 40px;
+    height: 40px;
+ }
+
+ footer{
+    display: flex;
+    justify-content: center;
+
+ }
+
+ footer a {
+    margin: 20px;
+    text-align: center;
+    border: 5px;
+ }
+
+ footer p {
+    margin-top: 2px;
+ }
+
+

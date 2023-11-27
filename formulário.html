@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Taylor Swift Formulário</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+           background-image: linear-gradient( to right, rgb(72,61,139), rgb(105,89,205)  );
+        }
+        .box{
+            color: white;
+            position: absolute;
+            top: 70%;
+            left: 50%;
+            transform: translate(-60%, -50%);
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 15px;
+            border-radius: 15px;
+            width: 20%;
+        }
+        fieldset{
+            border: 3px solid indigo;
+        }
+        legend{
+            border: 1px solid indigo;
+            padding: 10px;
+            text-align: center ;
+            background-color: indigo ;
+            border-radius: 10px;
+            
+        }
+        .inputBox{
+            position: relative;
+        }
+        .inputUser{
+            background: none;
+            border: none;
+            border-bottom: 1px solid white;
+            outline: none;
+            color: white;
+            font-size: 10px;
+            width: 100%;
+            letter-spacing: 2px;
+        }
+        .LabelInput{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            pointer-events: none;
+            transition: .5s;
+        }
+        .inputUser:focus ~ .LabelInput{
+             top: -20px;
+             font-size: 12px;
+             color: indigo;
+        }
+        #Data_Nascimento{
+            border: none;
+            padding: 10px;
+            border-radius: 10px;
+            outline: none;
+            font-size: 10px;
+        }
+        #submit{
+            background-image: linear-gradient( to right, rgb(72,61,139), rgb(105,89,205)  );
+            width: 100%;
+            border: none;
+            padding: 10px;
+            color: white;
+            font-size: 10px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        #submit:hover{
+            background-image: linear-gradient( to right, rgb(72,61,139), rgb(105,89,205)  );
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <form action="">
+            <fieldset>
+                <legend><b> Formulário de Fãs</b></legend>
+                <br>
+                <div class="inputBox">
+                    <input type="text" name="Nome" id="Nome" class="inputUser" required>
+                    <label for="Nome" class="labelInput"> Nome completo</label>
+                </div>
+                <br></br>
+                <div class="inputBox">
+                    <input type="email" name="Email" id="Email" class="inputUser" required>
+                    <label for="Nome" class="labelInput"> Email</label>
+                    </div>
+                    <br></br>
+                    <div class="inputBox">
+                        <input type="tel" name="Telefone" id="Telefone" class="inputUser" required>
+                        <label for="Nome" class="labelInput"> Telefone</label>
+                    </div>
+                    <br></br>
+                    <p>Sexo:</p>
+                    <input type="radio" id="Feminino" name="Genero" value="Feminino" required>
+                    <label for="Feminino"> Feminino</label>
+                    <input type="radio" id="Maculino" name="Genero" value="Masculino" required>
+                    <label for="Maculino"> Masculino</label>
+                    <input type="radio" id="Outro" name="Genero" value="Outro" required>
+                    <label for="Outro"> Outro</label>
+                    <div class="inputBox">
+                        <br></br>
+                        <label for="Data_Nascimento"> Data de nascimento</label>
+                        <input type="date" name="Data_Nascimento" id="Data_Nascimento"  required>
+                        </div>
+                        <br></br>
+                        <div class="inputBox">
+                            <input type="text" name="cidade" id="Cidade" class="inputUser" required>
+                            <label for="cidade" class="labelInput"> Cidade</label>
+                            </div>
+                            <br></br>
+                            <div class="inputBox">
+                                <input type="text" name="Estado" id="Estado" class="inputUser" required>
+                                <label for="Estado" class="labelInput"> Estado</label>
+                                </div>
+                                <br></br>
+                                <div class="inputBox">
+                                    <input type="number" name="faixa_etaria" id="faixa_etaria" class="inputUser" required>
+                                    <label for="faixa_etaria" class="labelInput"> Idade </label>
+                                    </div>
+                                    <br></br>
+                                    <div class="inputBox">
+                                        <input type="text" name="album_favorito" id="album favorito" class="inputUser" required>
+                                        <label for="album_favorito" class="labelInput"> Albúm Predileto</label>
+                                        </div>
+                                        <br></br>
+                                        <p>Você segue a Taylor em todas as redes sociais:</p>
+                    
+                    <input type="radio" id="Sim" name="Albúm" value="Sim" required>
+                    <label for="Sim"> SIM</label>
+                    <input type="radio" id="Nao" name="Albúm" value="Nao" required>
+                    <label for="Nao"> NÃO</label>
+                    <input type="radio" id="outro" name="Albúm" value="outro" required>
+                    <label for="Nao"> OUTRO</label>
+                    <br></br>
+                    <div class="inputBox">
+                        <input type="text" name="Música" id="Música" class="inputUser" required>
+                        <label for="Música" class="labelInput"> Música favorita</label>
+                        </div>
+                        <br></br>
+                        <div class="inputBox">
+                            <input type="text" name="Fandow" id="Fandow" class="inputUser" required>
+                            <label for="Fandow" class="labelInput"> Quanto tempo de fandow</label>
+                            </div>
+                            <br></br>
+                            <input type="submit" name="submit" id="submit">
+            </fieldset>
+        </form>
+    </div>
+    
+</body>
+</html>
+
